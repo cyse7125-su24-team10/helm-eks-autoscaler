@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/compare/v1.1.0...v1.1.1) (2024-07-18)
+
+
+### Bug Fixes
+
+* conventional commits ([38fe92c](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/commit/38fe92c58821d7c419f04b29ef14698d1df23017))
+
 # [1.1.0](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/compare/v1.0.0...v1.1.0) (2024-07-18)
 
 
