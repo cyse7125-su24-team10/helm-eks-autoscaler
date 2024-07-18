@@ -1,4 +1,10 @@
 pipeline {
+        environment {
+        registry = "vkneu7/eks-autoscaler"
+        DOCKER_ID = 'vkneu7'
+        DOCKER_PWD = credentials('DOCKER_PWD')
+        //imageName = "webapp-consumer"
+    }
     agent any
     stages {
         stage('Clone') {
