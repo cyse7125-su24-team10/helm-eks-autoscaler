@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/compare/v1.0.0...v1.1.0) (2024-07-18)
+
+
+### Features
+
+* added env variables in jenkinsfile ([1a55a2c](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/commit/1a55a2cd915e137304482f153ef037af808ad818))
+* image mirroring changes to dockerfile ([b6ecdd9](https://github.com/cyse7125-su24-team10/helm-eks-autoscaler/commit/b6ecdd9159c69891a0992e1e1d57534b48ef4b8a))
+
 # 1.0.0 (2024-07-18)
 
 
