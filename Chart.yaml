@@ -4,10 +4,10 @@ description: Scales Kubernetes worker nodes within autoscaling groups.
 home: https://github.com/kubernetes/autoscaler
 icon: https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png
 maintainers:
-- email: guyjtempleton@googlemail.com
-  name: gjtempleton
+  - email: guyjtempleton@googlemail.com
+    name: gjtempleton
 name: cluster-autoscaler
 sources:
-- https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
+  - https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
 type: application
-version: 9.37.0
+version: 1.0.0
