@@ -36,9 +36,10 @@ pipeline {
                         def latestTag = sh(script: 'git describe --abbrev=0 --tags', returnStdout: true).trim()
                         echo "Using release tag: ${latestTag}"
                         sh 'echo $DOCKER_PWD | docker login -u $DOCKER_ID --password-stdin'
-                        sh 'docker pull --platform linux/amd64 registry.k8s.io/autoscaling/cluster-autoscaler:v1.30.0'
-                        sh "docker tag registry.k8s.io/autoscaling/cluster-autoscaler:v1.30.0 ${registry}:${latestTag}"
-                        sh "docker push ${registry}:${latestTag}"
+                        sh 'docker buildx rm newbuilderx || true'
+                        sh 'docker buildx create --use --name newbuilderx --driver docker-container'
+                        sh "docker buildx build --file Dockerfile --platform linux/amd64,linux/arm64 -t ${registry}:${latestTag} --push ."
+                        sh 'docker buildx rm newbuilderx'
                     }
                 }
         }
